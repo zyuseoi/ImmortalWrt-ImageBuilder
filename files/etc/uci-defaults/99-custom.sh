@@ -54,7 +54,7 @@ case "$board_name" in
 esac
 
 # 3. 配置网络
-elif [ "$count" -gt 1 ]; then
+if [ "$count" -gt 1 ]; then
     # 多网口设备配置
     # 配置WAN
     uci set network.wan=interface
